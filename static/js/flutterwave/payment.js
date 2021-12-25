@@ -10,7 +10,7 @@ const makePayment = (transaction_ref) =>{
     // GET PURCHASE DETAILS FROM THE LOCAL STORAGE
     const  { price, bundleName, value} = JSON.parse(localStorage.getItem("_bundle"))
     FlutterwaveCheckout({
-        public_key: process.private.PAYMENT_KEY,
+        public_key: "FLWPUBK-661bb951ce002f066736b4576f5340ce-X",
         tx_ref: transaction_ref,
         amount: price,
         currency: "NGN",
@@ -32,7 +32,6 @@ const makePayment = (transaction_ref) =>{
         customizations: {
             title: "John Oseni Service",
             description: `Payment of ${price} for ${bundleName} ${value}`,
-            logo: "https://github.com/unclebay143.png",
         },
     });
 }
