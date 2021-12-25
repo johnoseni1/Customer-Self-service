@@ -13,7 +13,7 @@ const makeAirtimePayment = (transaction_ref) =>{
     const retrieveReceiptEmail = localStorage.getItem("_receipt_email")
 
     FlutterwaveCheckout({
-        public_key: process.private.PAYMENT_KEY,
+        public_key: "FLWPUBK-661bb951ce002f066736b4576f5340ce-X",
         tx_ref: transaction_ref,
         amount: retrieveRechargeAmount,
         currency: "NGN",
