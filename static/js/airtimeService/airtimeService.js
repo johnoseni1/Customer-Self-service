@@ -10,7 +10,7 @@ const airtimeService = () =>{
                 required
                 />
             <button type="submit">Recharge</button>
-        <form>        
+        <form> 
     `)
 }
 
